@@ -273,7 +273,6 @@ get_ft_for_syrf <- function(path, syrf_search, email){
 #' # Get full file names including extensions
 #' get_CustomIds_with_ft("path/to/directory", remove_ext = FALSE)
 #' 
-#' @export
 get_CustomIds_with_ft <- function(path, remove_ext=TRUE){
   
   pdfs_found_now <- list.files(path = path)
@@ -292,7 +291,6 @@ get_CustomIds_with_ft <- function(path, remove_ext=TRUE){
 #' Wiley full text retrieval
 #'
 #'  This function retrieves full texts from Wiley journals
-#' @export
 #' @param doi digital object identifier
 #' @param uid unique identifier for paper
 #' @param token API token
@@ -321,7 +319,6 @@ wiley_ft <- function(doi, uid, token, path){
 #' Elsevier full text retrieval
 #'
 #' This function retrieves full texts from Elsevier journals
-#' @export
 #' @param doi digital object identifier
 #' @param uid unique identifier for paper
 #' @param token API token
